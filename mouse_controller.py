@@ -1,6 +1,7 @@
 import pyautogui
 
 
+
 class MouseController:
 
     def __init__(self):
@@ -35,3 +36,15 @@ class MouseController:
     def left_click(self):
 
         pyautogui.click()
+
+    def scroll(self, amount):
+            pyautogui.scroll(amount)
+
+    def right_click(self):
+                pyautogui.rightClick()
+
+    def next_slide(self):
+        pyautogui.press("right")
+
+    def previous_slide(self):
+        pyautogui.press("left")
